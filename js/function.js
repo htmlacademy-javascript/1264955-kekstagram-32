@@ -1,6 +1,6 @@
 //Функция для проверки длины строки
 const stringLenghtCheck = (string,symbols) => string.length <= symbols;
-stringLenghtCheck('sus');
+stringLenghtCheck('sus,3');
 
 //Функция для проверки, является ли строка палиндромом
 const stringPalindromCheck = (string) => {
