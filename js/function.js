@@ -18,6 +18,7 @@ stringPalindromCheck('sus');
 const figuresOnly = (string) => {
   const allFigures = string.replace(/[^0-9]/g, '');
   return parseInt(allFigures, 10);
-}
+};
+
 figuresOnly('123.пришлось_вкатиться_в_экспрешон.456');
 
