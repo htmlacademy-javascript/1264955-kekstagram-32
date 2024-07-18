@@ -1,9 +1,9 @@
 //Функция для проверки длины строки
-const stringLenghtCheck = (string,symbols) => string.length <= symbols;
-stringLenghtCheck('sus,3');
+const сheckStringLength = (string,symbols) => string.length <= symbols;
+сheckStringLength('sus,3');
 
 //Функция для проверки, является ли строка палиндромом
-const stringPalindromCheck = (string) => {
+const checkStringPalindrom = (string) => {
   const stringDespase = string.replaseAll(' ','');
   const stringLowerCase = stringDespase.toLowerCase();
   let stringReverse = '';
@@ -12,13 +12,13 @@ const stringPalindromCheck = (string) => {
   }
   return string === stringReverse;
 };
-stringPalindromCheck('sus');
+checkStringPalindrom('sus');
 
 //Функция принимает строку, извлекает содержащиеся в ней цифры от 0 до 9 и возвращает их в виде целого положительного числа.
-const figuresOnly = (string) => {
+const getFiguresOnly = (string) => {
   const allFigures = string.replace(/[^0-9]/g, '');
   return parseInt(allFigures, 10);
 };
 
-figuresOnly('123.пришлось_вкатиться_в_экспрешон.456');
+getFiguresOnly('123.пришлось_вкатиться_в_экспрешон.456');
 
