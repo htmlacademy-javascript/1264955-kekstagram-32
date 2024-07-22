@@ -72,6 +72,8 @@ const createPost = () => ({
   comments: Array.from({length: getRandomInteger(1, MAX_COMMENT_COUNT)}, createComment),
 });
 
-const allPosts = Array.from({length: POSTS_COUNT}, createPost);
+const createAllPosts = () => {
+  Array.from({length: POSTS_COUNT}, createPost);
+};
 
-allPosts();
+createAllPosts();
