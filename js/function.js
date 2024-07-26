@@ -1,3 +1,5 @@
+//НУЖНО БОЛЬШЕ ФУНЦКИЙ
+
 //Функция для проверки длины строки
 const сheckStringLength = (string,symbols) => string.length <= symbols;
 сheckStringLength('sus,3');
@@ -21,4 +23,3 @@ const getFiguresOnly = (string) => {
 };
 
 getFiguresOnly('123.пришлось_вкатиться_в_экспрешон.456');
-
