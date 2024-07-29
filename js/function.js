@@ -23,3 +23,16 @@ const getFiguresOnly = (string) => {
 };
 
 getFiguresOnly('123.пришлось_вкатиться_в_экспрешон.456');
+
+// ФУНКЦИИ ВОЗВРАЩАЮТСЯ
+
+const getManageMeeting = (startDay, endDay, startMeeting, durationMeeting) => {
+  const transfToMinutes = (time) => {
+    const timeCase = time.split(':');
+    const timeInMinutes = timeCase[0] * 60 + parseInt(timeCase[1], 10);
+    return timeInMinutes;
+  };
+  return transfToMinutes(startMeeting) + durationMeeting <= transfToMinutes(endDay) && transfToMinutes(startMeeting) >= transfToMinutes(startDay);
+};
+
+getManageMeeting();
